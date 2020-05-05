@@ -1,0 +1,135 @@
+/*general setup*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*utilities*/
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0  auto;   
+}
+
+.containers > * {
+    width: 100%;
+}
+
+.flex-column{
+   display: flex;
+   flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.option-container{
+        display: flex;
+        width: 35vw;
+        border-radius: 4rem;
+        margin: 0.5rem auto 0.5rem auto;
+        justify-content: center;
+        border:0.2rem solid rgba(255, 255, 255, 0.87);
+        background-color:#864d7f;
+        padding: 0.8rem;
+  }
+
+    .question-container{
+        margin-bottom: 4rem;
+       margin: 0 auto;
+        border: 3px solid white;
+        background-color: thistle;
+        width: 50%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: baseline;
+         padding: 4rem;
+         box-shadow: 0 0 5px 2px;
+         border-radius: 1rem;
+         margin-bottom: 2rem;      
+    }
+
+    .option-container:hover{
+        cursor: pointer;
+        box-shadow: 0 0.3rem  0.8rem 0  #864d7fb0;
+    transform: translateY(-o.1rem);
+    }
+
+.option-text{
+    padding: 0.8rem;
+    width: 100%;
+    text-align: center;
+      font-size: 1.4rem;
+}
+
+.correct{
+    background-color: #28a745;
+    color: white;
+}
+
+.incorrect{
+    background-color: #dc3545;
+    color: white;
+}
+       
+  /*styling for the score counter and question*/      
+#hud{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 0em;
+}
+
+.hud-prefix{
+    text-align: center;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+
+footer{
+    margin-bottom: 6rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[type="submit"]{
+    border: 3px solid white;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 13rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    background-color: thistle;
+    margin-top: 3rem;
+    box-shadow: 0 0 5px 2px
+}
+
+button[type="submit"]:hover{
+    cursor: pointer;
+   border-color: #864d7f;
+}

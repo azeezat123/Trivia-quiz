@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <title>Trivia | Gamepage</title>
+</head>
+<body>
+    <header>
+        <h4>TRIVIA QUIZ</h4>
+   </header>
+
+  <div class="containers"> 
+  <div id="start-game" class="justify-center flex-column">
+
+      <!--score and counter-->
+     <div id="hud">
+     <div id="hud-item">
+        <p class="hud-prefix">Question</p>
+        <h1 class="hud-main-text" id="counter"></h1>
+ </div>
+ <div id="hud-item">
+    <p class="hud-prefix">Score</p>
+    <h1 class="hud-main-text" id="score">0</h1>
+  </div>
+</div>
+     
+    <!--The question and option container starts here-->
+ <div class="question-container">
+        <h2 id="question">answer to the question?</h2>
+ </div>
+
+ <div class="option-container">
+      <p class="option-text" data-number="1">option 1</p>
+</div>
+<div class="option-container" >
+     <p class="option-text" data-number="2">option 2</p>
+ </div>
+<div class="option-container" >
+    <p class="option-text" data-number="3">option 3</p>
+</div>
+  </div>
+    </div>
+<div class="btn">
+    <button type="submit" id="nxt-button" onclick="getNewQuestion()">Next</button>
+
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
